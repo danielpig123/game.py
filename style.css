@@ -1,0 +1,36 @@
+
+body{
+    
+    background-image: url(images/pngtree-asteroid-field-space-combat-with-laser-blasts-image_16740486.jpg);
+    background-repeat:no-repeat;
+    background-position:center ;
+    background-size: cover;
+    color: white;
+    height:100px;
+    width: 100%;
+    padding: 0px;
+    
+}
+button{
+    background-color:orange;
+    position:absolute;
+    left:43vw;
+    top:150px;
+    padding: 20px 30px; 
+    border-radius:7px ;
+    border: 2px;
+    cursor:pointer;
+}
+footer{
+    background-color: rgb(62, 65, 64);
+    position: absolute;
+    left:0px;
+    margin-top: 0px;
+    padding: 0px;
+    top: 400px;
+    height:60vh;
+    width: 100vw;
+}
+footer h1{
+
+}
