@@ -1379,7 +1379,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const audio = document.getElementById("myaudio");
     if(playButton){
         playButton.addEventListener("click", () => {
-                MM_play(tracks,loops);
+                MM_play(track,loops);
                 audio.play();
         });
     } 
