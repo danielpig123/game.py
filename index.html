@@ -5,44 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>太空大戰</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<main>
-    <div id="背景">
-        <button id="playbutton" onclick="startgame()">開始遊戲</button>
-    </div>
-
-    <div id="game-container" style="display: none;">       
-        <iframe src="game.html" width="100%" height="600" style="border: none;"></iframe>
-    </div>
-    <script src="data/pythons.js"></script>
-    
+    <script src="pythons.js"></script>
+    <script src="script.js"></script>
     <script>
         function startgame() {
-    if (window.MM && window.MM.tracks !== undefined) {
-        console.log("準備好了！Tracks:", window.MM.tracks);
-        // 顯示遊戲容器，隱藏背景
-        document.getElementById("背景").style.display = "none";
-        document.getElementById("game-container").style.display = "block";
-        // 動態創建 iframe
-        const gameContainer = document.getElementById("game-container");
-        const iframe = document.createElement("iframe");
-        iframe.src = "game.html"; // 假設遊戲在 main.html，改成你的實際檔案
-        iframe.width = "100%";
-        iframe.height = "600";
-        iframe.style.border = "none";
-        gameContainer.appendChild(iframe);
-    } else {
-        // 如果還沒準備好，等 100 毫秒再試
-        setTimeout(startgame, 100);
-    }
-}
+            // 顯示遊戲容器，隱藏背景
+            document.getElementById("背景").style.display = "none";
+            document.getElementById("game-container").style.display = "block";
+            // 執行 main.py
+            window.python.PyRun_SimpleString(`
+                import sys
+                import os
+                sys.path.append('/data/data/org.python/assets')
+                with open('/data/data/org.python/assets/game3.py', 'r') as f:
+                    exec(f.read())
+            `);
+        }
     </script>
-</main>
+</head>
+
+
+<body>
+    <div id="背景">
+        <div style="font-size: 2em; text-align: center;">Downloading...</div>
+        <div style="display: flex; justify-content: center;">
+            <canvas id="canvas" style="max-width: 100%;"></canvas>
+        </div>
+    </div>
+    <div id="game-container" style="display: none;">
+        <div style="display: flex; justify-content: center;">
+            <canvas id="canvas"></canvas>
+        </div>
+        <footer>
+            <button onclick="window.location.href='https://pygame-web.github.io'">AIO ⏏︎</button>
+            <button>AIO ■</button>
+            <button onclick="startgame()">AIO ▶</button>
+            <button>Music ■</button>
+            <div>
+                <span>min</span>
+                <span>avg</span>
+                <span>max</span>
+                <button>RESET</button>
+            </div>
+            <div>(battery level unknown)</div>
+            <div>(charging state unknown)</div>
+        </footer>
+    </div>
+    <input type="file" id="fileInput" multiple style="display: none;" onchange="handleFiles(this.files)">
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const playButton = document.getElementById("playbutton");
-    });
+        function handleFiles(files) {
+            // pygbag 的檔案處理邏輯
+        }
     </script>
 </body>
 </html>
