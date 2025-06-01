@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const playButton = document.getElementById("playbutton");
-
+});
 "use strict";
 
 /*  BF2 is still broken see  https://github.com/jvilk/BrowserFS/issues/325
