@@ -1372,8 +1372,8 @@ function MM_play(track, loops) {
                     }
                 
                  });
-               }
-         }
+            }
+}
 document.addEventListener("DOMContentLoaded", () => {
     const playButton = document.getElementById("playbutton");
     const audio = document.getElementById("myaudio");
