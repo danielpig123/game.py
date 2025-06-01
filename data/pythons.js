@@ -1354,32 +1354,31 @@ async function media_prepare(trackid) {
 
     } // track type mount
 }
-
+function MM_play(track, loops) {
+            const media = track.media
+            track.loops = loops
+            const prom = track.media.play()
+            if (prom){
+                prom.then(() => {
+                    // ME ok play started
+                    MM.UME = true
+                }).catch(error => {
+                    // Media engagement required
+                    MM.UME = false
+                    console.error(`** MEDIA USER ACTION REQUIRED [${track.test}] **`)
+                    if (track.test && track.test>0) {
+                         track.test += 1
+                        setTimeout(MM_play, 2000, track, loops)
+                    }
+                
+                 });
+               }
+         }
 document.addEventListener("DOMContentLoaded", () => {
     const playButton = document.getElementById("playbutton");
     if(playButton){
         playButton.addEventListener("click", () => {
-                function MM_play(track, loops) {
-                    const media = track.media
-                    track.loops = loops
-                    const prom = track.media.play()
-                    if (prom){
-                        prom.then(() => {
-                            // ME ok play started
-                            MM.UME = true
-                        }).catch(error => {
-                            // Media engagement required
-                            MM.UME = false
-                            console.error(`** MEDIA USER ACTION REQUIRED [${track.test}] **`)
-                            if (track.test && track.test>0) {
-                                track.test += 1
-                                setTimeout(MM_play, 2000, track, loops)
-                            }
-                
-                        });
-                    }
-                }
-   
+                MM_play(tracks,loops);
         });
     } 
     else{
