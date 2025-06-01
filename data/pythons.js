@@ -1357,8 +1357,13 @@ async function media_prepare(trackid) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const playButton = document.getElementById("playbutton");
+    if(playButton){
     playButton.addEventListener("click", () => {
         MM_play(track, loops);
+    } 
+    else{
+        console.warn;
+    }
     });
 });
 
