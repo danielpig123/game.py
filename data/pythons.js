@@ -1,5 +1,5 @@
-const playButton = document.getElementById("playbutton");
-
+document.addEventListener("DOMContentLoaded", () => {
+    const playButton = document.getElementById("playbutton");
 
 "use strict";
 
