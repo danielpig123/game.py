@@ -1359,7 +1359,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const playButton = document.getElementById("playbutton");
     if(playButton){
         playButton.addEventListener("click", () => {
-            MM_play(track, loops)=>{
                 function MM_play(track, loops) {
                     const media = track.media
                     track.loops = loops
@@ -1380,7 +1379,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         });
                     }
                 }
-            };
    
         });
     } 
