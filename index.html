@@ -27,14 +27,14 @@
         // 動態創建 iframe
         const gameContainer = document.getElementById("game-container");
         const iframe = document.createElement("iframe");
-        iframe.src = "main.html"; // 假設遊戲在 main.html，改成你的實際檔案
+        iframe.src = "game.html"; // 假設遊戲在 main.html，改成你的實際檔案
         iframe.width = "100%";
         iframe.height = "600";
         iframe.style.border = "none";
         gameContainer.appendChild(iframe);
     } else {
         // 如果還沒準備好，等 100 毫秒再試
-        setTimeout(startGame, 100);
+        setTimeout(startgame, 100);
     }
 }
     </script>
