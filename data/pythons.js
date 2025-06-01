@@ -1,3 +1,6 @@
+const playButton = document.getElementById("playbutton");
+
+
 "use strict";
 
 /*  BF2 is still broken see  https://github.com/jvilk/BrowserFS/issues/325
@@ -1352,6 +1355,11 @@ async function media_prepare(trackid) {
 
     } // track type mount
 }
+const playButton = document.getElementById("playbutton");
+
+playButton.addEventListener("click", () => {
+    MM_play(track, loops);
+});
 
 
 function MM_play(track, loops) {
