@@ -1355,7 +1355,7 @@ async function media_prepare(trackid) {
 
     } // track type mount
 }
-const playButton = document.getElementById("playbutton");
+
 
 playButton.addEventListener("click", () => {
     MM_play(track, loops);
