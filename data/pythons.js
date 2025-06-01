@@ -1,6 +1,6 @@
 "use strict";
 
-const playButton = document.getElementById("playbutton");
+
 
 /*  BF2 is still broken see  https://github.com/jvilk/BrowserFS/issues/325
 import { configure, BFSRequire, EmscriptenFS } from './browserfs.mjs';
@@ -1355,9 +1355,11 @@ async function media_prepare(trackid) {
     } // track type mount
 }
 
-
-playButton.addEventListener("click", () => {
-    MM_play(track, loops);
+document.addEventListener("DOMContentLoaded", () => {
+    const playButton = document.getElementById("playbutton");
+    playButton.addEventListener("click", () => {
+        MM_play(track, loops);
+    });
 });
 
 
