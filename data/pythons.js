@@ -1,5 +1,7 @@
 "use strict";
 
+const playButton = document.getElementById("playbutton");
+
 /*  BF2 is still broken see  https://github.com/jvilk/BrowserFS/issues/325
 import { configure, BFSRequire, EmscriptenFS } from './browserfs.mjs';
 //import { Buffer } from 'buffer';
