@@ -1376,9 +1376,11 @@ function MM_play(track, loops) {
          }
 document.addEventListener("DOMContentLoaded", () => {
     const playButton = document.getElementById("playbutton");
+    const audio = document.getElementById("myaudio");
     if(playButton){
         playButton.addEventListener("click", () => {
                 MM_play(tracks,loops);
+                audio.play();
         });
     } 
     else{
