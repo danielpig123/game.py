@@ -13,7 +13,7 @@ body{
 button{
     background-color:orange;
     position:absolute;
-    left:43vw;
+    left:35vw;
     top:60px;
     padding: 20px 30px; 
     border-radius:7px ;
@@ -31,8 +31,7 @@ button{
 .gamename h1{
     color:white;
     font-size:40px;
-    display:flex;
-    flex-direction:column;
-    alien-items:center;
-    justify-content:center;
+    position:absolute;
+    left:35vw;
+    
 }
