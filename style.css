@@ -4,7 +4,7 @@ body{
     background-repeat:no-repeat;
     background-position:center ;
     background-size: cover;
-    background-color:gray;
+    background-color:rgb(66,66,66);
     height:600px;
     width: 100%;
     padding: 0px;
@@ -21,7 +21,6 @@ button{
     cursor:pointer;
 }
 .gamename {
-    background-color:gray;
     position:absolute;
     height:200px;
     width:100%;
