@@ -34,16 +34,20 @@ button{
     position:absolute;
     left:35vw;
 }
-.介紹｛
+.introduce｛
+    position:absolute;
+    height:300px;
+    width:100%;
+    top:300px;
     display:flex;
     flex-direction:column;
     alien-items:center;
-    
-.介紹 h1{
+}
+.introduce h1{
     color:white;
     font-size:30px;
 }
-.介紹 h2{
+.introduce h2{
     color:white;
     font-size:25px;
 }
