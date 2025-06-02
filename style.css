@@ -28,9 +28,21 @@ footer{
     margin-top: 0px;
     padding: 0px;
     top: 400px;
-    height:60vh;
+    height:150px;
     width: 100vw;
 }
-footer h1{
-
+.gamename {
+    background-color:(66,66,66);
+    position:absolute;
+    height:200px
+    top:100px;
+    left:0;
+    display:flex;
+    flex-decoration:column;
+    alien-items:center;
+    padding-top:50px;
+}
+.gamename h1{
+    color:white;
+    font-size:40px;
 }
