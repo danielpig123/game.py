@@ -1,6 +1,6 @@
 
 .背景{
-    
+    position:absolute;
     background-image: url(data/pngtree-asteroid-field-space-combat-with-laser-blasts-image_16740486.jpg);
     background-repeat:no-repeat;
     background-position:center ;
@@ -24,7 +24,8 @@ button{
 .gamename {
     background-color:(66,66,66);
     position:absolute;
-    height:200px
+    height:200px;
+    width:100%;
     top:100px;
     left:0;
     display:flex;
