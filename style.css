@@ -26,12 +26,13 @@ button{
     width:100%;
     top:150px;
     left:0;
-    display:flex;
-    flex-direction:column;
-    alien-items:center;
-    justify-content:center;
+    
 }
 .gamename h1{
     color:white;
     font-size:40px;
+    display:flex;
+    flex-direction:column;
+    alien-items:center;
+    justify-content:center;
 }
