@@ -24,12 +24,12 @@ button{
     position:absolute;
     height:150px;
     width:100%;
-    top:200px;
+    top:150px;
     left:0;
     display:flex;
-    flex-decoration:column;
+    flex-direction:column;
     alien-items:center;
-    padding-top:50px;
+    justify-content:center;
 }
 .gamename h1{
     color:white;
