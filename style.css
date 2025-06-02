@@ -34,14 +34,9 @@ button{
     position:absolute;
     left:35vw;
 }
-.introduce｛
+.introduce {
     position:absolute;
-    height:300px;
-    width:100%;
     top:300px;
-    display:flex;
-    flex-direction:column;
-    alien-items:center;
 }
 .introduce h1{
     color:white;
