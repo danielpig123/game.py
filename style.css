@@ -4,6 +4,7 @@ body{
     background-repeat:no-repeat;
     background-position:center ;
     background-size: cover;
+    background-color:gray;
     height:600px;
     width: 100%;
     padding: 0px;
@@ -13,7 +14,7 @@ button{
     background-color:orange;
     position:absolute;
     left:43vw;
-    top:150px;
+    top:60px;
     padding: 20px 30px; 
     border-radius:7px ;
     border: 2px;
