@@ -19,13 +19,12 @@ button{
     border: 2px;
     cursor:pointer;
 }
-
 .gamename {
-    background-color:(66,66,66);
+    background-color:gray;
     position:absolute;
     height:200px;
     width:100%;
-    top:100px;
+    top:600px;
     left:0;
     display:flex;
     flex-decoration:column;
