@@ -5,32 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>太空大戰</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pythons.js"></script>
 </head>
 <body>
 <main>
-    <section class="背景">
-        <button onclick="startgame()">開始遊戲</button>
-    </section>
 
-    <section id="game-container" style="display: none;">       
-        <iframe src="game.html" width="100%" height="600" style="border: none;"></iframe>
-    </section>
-
-    <script>
-        function startgame(){
-            document.getElementById("背景").style.display="none";
-            document.getElementById("game-container").style.display="block";
-            
-        }
-    </script>
-    <section class="gamename">
+    <section class="標題背景">
         <h1>太空生存戰</h1>
     </section>
-    <section class="introduce">
+
+    <section class="文字介紹">
         <h1>遊戲介紹</h1>
-        <h2>.....</h2>
+        <h2>在無盡的宇宙深處，星際飛行員孤身駕駛戰鬥飛船穿梭於隕石密布的太空區域。突然，一場巨大的隕石風暴席捲而來</h2>
+        <h3>逃生之路岌岌可危，為了生存，你必須靈活操控飛船，閃避猛烈撞擊，並利用雷射炮擊碎迎面而來的巨型隕石</h3>
+        <h4>展現你的反應速度與準確瞄準能力，在危機四伏的星際戰場中創造最高分紀錄！</h4>
     </section>
-</main> 
+
+    <section class="玩法">
+    <div>
+        <h1>遊戲規則</h1>
+        <h2>隨機生成的隕石從四面八方襲來 玩家需透過 "AD鍵" 左右移動閃避隕石 被隕石擊中會扣除生命值</h2>
+        <h3>點擊 "空白鍵" 可以發射雷射 不停擊碎隕石來獲得積分</h3>
+        <h4>擊碎的隕石越大或的的積分越多 血量歸零時遊戲結束</h4>
+    </div>
+    <img src="images/220618.png" alt="圖片"></img>
+    </section>
+        
+</main>     
 </body>
+<footer>
+    <h1>遊玩影片:</h1>
+     
+    <video src="images/video2.mp4"
+    poster="images/螢幕擷取畫面 2025-06-08 173258.png"
+    height="800px"
+    width="640px"
+    autoplay="false"
+    controls="false"
+
+    ></video>
+
+    
+
+</footer>
 </html>
