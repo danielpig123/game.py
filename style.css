@@ -1,48 +1,99 @@
-body{
+.標題背景{
+    background-color: rgb(66,66,66);
     position:absolute;
-    background-image: url(data/pngtree-asteroid-field-space-combat-with-laser-blasts-image_16740486.jpg);
-    background-repeat:no-repeat;
-    background-position:center ;
+    width: 100%;
+    height:900px;
+    top: 0;
+    left: 0;
+    background-image: url(images/pngtree-asteroid-field-space-combat-with-laser-blasts-image_16740486.jpg);
     background-size: cover;
-    background-color:rgb(66,66,66);
+    background-position:center;
+    background-repeat : no-repeat;
+    
+    
+}
+.標題背景 h1{
+    color: aliceblue;
+    position: absolute;
+    font-size:70px;
+    left: 40vw;
+    top:100px;
+
+    
+}
+.文字介紹 {
+     background-color: rgb(66,66,66);
+     position:absolute;
+     left: 0;
+     top:600px;
+     height: 500px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     line-height: 20px;
+}
+
+.文字介紹 h1{
+    color: aliceblue;
+    font-size: 35px;
+}
+.文字介紹 h2,h3,h4{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.玩法 {
+    position: absolute;
+    top: 1100px;
+    background-color: rgb(66, 66, 66);
     height:600px;
     width: 100%;
-    padding: 0px;
+    left: 0;
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding-top:70px;
+    padding-left: 300px;
+}
+.玩法 h1{
+    color: aliceblue;
+    font-size:35px;
     
 }
-button{
-    background-color:orange;
-    position:absolute;
-    left:35vw;
-    top:60px;
-    padding: 20px 30px; 
-    border-radius:7px ;
-    border: 2px;
-    cursor:pointer;
+.玩法 h2,h3{
+    color: aliceblue;
+    font-size: 20px;
 }
-.gamename {
-    position:absolute;
-    height:150px;
-    width:100%;
-    top:150px;
-    left:0;
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 1700px;
+    left: 0;
+    background-color: rgb(66, 66, 66);
+    height: 1500px;
+    width: 100%;
+    padding-top:150px ;
+}
+footer h1{
+    position:absolute ;
+    left: 32vw;
+    top:50px;
+    font-size: 40px;
+    color: aliceblue;
+}
+footer video{
+    border-radius: 15px;
+    object-fit: cover;
+}
+img{
+    display: block;
+    height:400px;
+    width:320px;
+    padding-left: 100px;
+}
+
     
-}
-.gamename h1{
-    color:white;
-    font-size:40px;
-    position:absolute;
-    left:35vw;
-}
-.introduce {
-    position:absolute;
-    top:300px;
-}
-.introduce h1{
-    color:white;
-    font-size:30px;
-}
-.introduce h2{
-    color:white;
-    font-size:25px;
-}
+
